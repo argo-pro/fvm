@@ -1,0 +1,296 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: 'Armomega';
+  src:url("../fonts/Armomega.ttf");
+}
+@font-face {
+  font-family: 'GHEAGrpalatReg';
+  src:url("../fonts/GHEAGrpalatReg.otf");
+}
+
+ body{
+  background: url("../image/patterno/white_carbon.png");
+  /* background-image: 
+  linear-gradient(-45deg, transparent 50%, #E8E8E4 50%, #E8E8E4 55%, transparent 55%), 
+  linear-gradient(-45deg, #E8E8E4 5%, transparent 5%); 
+  background-color: #FEFFFE;
+  background-size: 3.5px 3.5px; */
+ }
+ .top-one{
+   width:100%;
+   height:60px;
+   background: #201A16;
+   background: #F1F1F1;
+ }
+ .top-one p {
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: .05em;
+  }
+  .top-one cite {
+  font-style: normal;
+  }
+ .top-one__marquee{
+  width: 1280px;
+  height:70px;
+  padding-top:20px;
+  margin: 0 auto;
+ }
+ marquee{
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  font-family: 'Arial AMU';
+ }
+ .top-two{
+   width:100%;
+   /* height:67px; */
+   background: #5A3D3E;
+   background: #B5B5B5;
+   border-top: 1px solid #6A5151;
+   box-sizing: border-box;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+ }
+ 
+ /* .top-two__item img{
+  margin-top:-8px;
+  position:absolute;
+  width:100%;
+ } */
+ /*.navbar{
+   max-width:1280px;
+  margin:0 auto;
+  text-align: center; 
+  }*/
+  .navbar i{
+    margin-left: 4px;
+  }
+ .navbar a{
+   text-decoration:none;
+   color: #BDB1B2;
+   color: #000;
+   color: #fff;
+   display: inline-block;
+   font-family: Arial, "Helvetica Neue",Helvetica,sans-serif;
+   font-size: 14px;
+   padding: 15px 30px;
+   transition:  0.2s linear;
+ }
+ .navbar a:first-child{
+   color: #fff;
+   font-size:14px;
+   font-weight: 900px;
+   font-family: 'Arial AMU';
+   font-family: 'GHEAGrpalatReg';
+   text-transform: uppercase;
+   box-sizing: border-box;
+ }
+ .navbar a:hover{
+  border-radius: px;
+  background: #F1F1F1; 
+  color: #e25e2d;
+  color:#B03062;
+  color: #da6353;
+  background: #fff;
+  
+  /* box-shadow: 0 0 0 5px #fff,
+              0 0 0 8px #e25e2d; */
+  border-radius:px;
+  cursor: pointer;
+ }
+ .wrapper{
+  max-width:1180px;
+  min-height:600px;
+  /* background: #fff; */
+  margin:50px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+.card{
+  margin-bottom:50px;
+  background: #F5F5F5;
+  /* background: #E5DDD5; Այս գունը գիրք կարդալու հարմար է */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width:305px;
+  height:500px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content:  space-evenly;
+}
+.book-box{
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.book-box .book{
+  position: relative;
+  margin:10px auto;
+  width: 180px;
+  height: 266px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.book-box .book img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.book-box .book:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/Girq-left.jpg");
+  background-position:center;
+  background-size: cover;
+ 
+  transform: rotateY(90deg);
+}
+.book-box .bible:before{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/Bible-left.jpg");
+  background-position:center;
+  background-size: contain;
+ 
+  transform: rotateY(90deg);
+}
+.book-box .first:before{
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/First-left.jpg");
+  background-position:center;
+  background-size: contain;
+ 
+  transform: rotateY(90deg);
+}
+.book-box .tragedy:before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/Tragedy-left.jpg");
+  background-position:center;
+  background-size: contain;
+  
+  transform: rotateY(90deg);
+}
+.book-box .revelation:before{
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/Revelation-left.jpg");
+  background-position:center;
+  background-size: contain;
+  
+  transform: rotateY(90deg);
+}
+.book-box .Branham:before{
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  transform-origin: left;
+  background: url("../image/Revelation-left.jpg");
+  background-position:center;
+  background-size: contain;
+  background: #B8CAD8;
+
+  transform: rotateY(90deg);
+}
+
+.book-box .book:hover{
+  transform: rotateY(35deg);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+
+.card > h2{ 
+    color: #5A3D3E;
+    font-family: 'Armomega';
+    font-family: 'Arial AMU';
+
+    /*font-family: 'ArTarumianBarak';*/
+  }
+  
+  /* .Bible:after{
+    content: "";
+    display:block;
+    width:70px;
+    height:3px;
+    margin:17px auto 0;
+    background: #5A3D3E;
+  } */
+  .card p{
+    text-align: center;
+    width:280px;
+    font-size:16px;
+    font-family: 'GHEAGrpalatReg';
+    font-family: 'Arial AMU';
+    color: #5A3D3E;
+    letter-spacing: 0.056px;
+  }
+  .card .pom{
+    font-family: 'Armomega';
+    font-family: 'Arial AMU';
+  }
+  .card > h2:after{
+    content: "";
+    display:block;
+    width:70px;
+    height:3px;
+    margin:17px auto 0;
+    background: #5A3D3E;
+  }
+  .for-button{
+    text-align:center;
+    width:280px;
+  }
+  .card a{
+    box-sizing: border-box;
+    display:inline-block;
+    text-decoration:none;
+    width:120px;
+    margin:0 5px;
+    padding:8px 0;
+    background: #ff5733;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'GHEAGrpalatReg';
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: background 0.2s ease-in-out;
+   }
+  .card a:hover{
+    background: #e25e2d;
+    cursor:pointer
+  }
+    
