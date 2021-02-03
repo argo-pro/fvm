@@ -44,11 +44,12 @@
  .top-one__marquee{
   width: 1280px;
   height:70px;
-  padding-top:20px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
  }
  marquee{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   color: #000;
   font-family: 'Arial AMU';
@@ -75,6 +76,9 @@
   margin:0 auto;
   text-align: center; 
   }*/
+  .navbar{
+    display: none;
+  }
   .navbar i{
     margin-left: 4px;
   }
